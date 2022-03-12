@@ -82,7 +82,7 @@ namespace DiamondMind.Prototypes.FPSPlayer
             if (isWalking && isCrouching && !playerInput.sprintInput)    // crouchwalk
             {
                 currentSpeed = crouchSpeed;
-                controller.Move(move * crouchSpeed * Time.deltaTime);
+                controller.Move(move * currentSpeed * Time.deltaTime);
             }
     
         }
